@@ -1,5 +1,3 @@
-//JOKENPO - PEDRA, PAPEL, TESOURA
-
 const options = [
   { name: 'rock', wins: 'scissors', loses: 'paper' },
   { name: 'paper', wins: 'rock', loses: 'scissors' },
