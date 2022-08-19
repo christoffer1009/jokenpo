@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <h1 class="text-2xl font-bold flex items-center justify-center">JOKENPO</h1>
+    <div id="message-box" class="flex items-center justify-center text-xl">
+      MAKE YOUR CHOICE: ROCK, PAPER OR SCISSORS?
+    </div>
+
+    <div class="flex flex-row gap-8 m-8 justify-center">
+      <div
+        class="option border-2 border-slate-900"
+        id="rock"
+        onclick="setPlayerChoice(0)"
+      >
+        <img class="w-60 hover:w-100" src="images/rock.png" alt="rock" />
+      </div>
+      <div
+        class="option border-2 border-slate-900"
+        id="paper"
+        onclick="setPlayerChoice(1)"
+      >
+        <img
+          class="w-60 max-w-full h-auto"
+          src="images/paper.png"
+          alt="paper"
+        />
+      </div>
+      <div
+        class="option border-2 border-slate-900"
+        id="scissors"
+        onclick="setPlayerChoice(2)"
+      >
+        <img
+          class="w-60 max-w-full h-auto"
+          src="images/scissors.png"
+          alt="scissors"
+        />
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center">
+      <button
+        class="mx-auto border-2 border-slate-900 rounded p-4 hover:underline"
+        onclick="play(playerChoice)"
+        id="play-btn"
+      >
+        PLAY
+      </button>
+    </div>
+    <script src="scripts/jokenpo.js"></script>
+  </body>
+</html>
